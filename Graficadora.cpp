@@ -962,8 +962,7 @@ string dotCapaIndividual(CapasABB& abb, int idCapa) {
         string filaId = "fila_" + to_string(idCapa) + "_" + to_string(f->Fila);
         dot += "  " + filaId + " [label=\"" + to_string(f->Fila) + "\", shape=box, style=filled, fillcolor=\"#D5F5E3\"];\n";
         dot += "  " + prevFilaId + " -> " + filaId + " [style=bold];\n";
-        
-        // CORRECCIÓN: Actualizamos el seguidor de filas para la jerarquía del dibujo
+
         prevFilaId = filaId; 
 
         NodoCol* col = f->Col1;
