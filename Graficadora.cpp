@@ -1065,7 +1065,7 @@ void GuardarDot(const string& nombre, const string& contenido) {
     else
         cout << "No se genero el PNG. Verifica que Graphviz este instalado y en el PATH.\n";
 }
-
+//Dot para opcion 16 matriz dispersa
 void SoloDot(const string& nombre, const string& contenido) {
     ofstream f(nombre);
     f << contenido;
